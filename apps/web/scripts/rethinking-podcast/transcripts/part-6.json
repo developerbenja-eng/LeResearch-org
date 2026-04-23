@@ -1,0 +1,18 @@
+{
+  "id": "part-6",
+  "title": "What We're Building",
+  "estimatedMinutes": 3,
+  "anchor": null,
+  "lines": [
+    { "speaker": "Rain", "text": "Let's talk about the practice. The paper has a section called implications for practice. And it's deliberately not a product manual — it's design principles." },
+    { "speaker": "Flow", "text": "First one — blame is incoherent. Implies that any educational AI should never judge, only facilitate. Struggle is productive. Research from Kapur in 2016 shows wrestling with a problem builds stronger neural pathways than being given the answer." },
+    { "speaker": "Rain", "text": "But — and this is important — the paper doesn't just say \"make them struggle.\" It brings Vygotsky in again. Productive struggle is not solo struggle. It happens inside a scaffolded relationship. The Zone of Proximal Development. An AI tool that leaves a learner drowning has missed the point as badly as one that hands them the answer." },
+    { "speaker": "Flow", "text": "The design consequence is what Freire called problem-posing education. The tool asks the kinds of questions that make the learner's own thinking visible — to themselves — without substituting for it." },
+    { "speaker": "Rain", "text": "Which is different from what the paper calls a \"Socratic method at scale\" slogan. The authors explicitly cut that line. The real move is more political — treat the learner as a co-investigator of their situation, not a recipient of content." },
+    { "speaker": "Flow", "text": "Second — environment shapes outcomes. Implies that observation systems exist to improve conditions, not to surveil. The distinction is purpose. Surveillance is about control — catching wrong behavior. Observation is about improvement — understanding what helps learning." },
+    { "speaker": "Rain", "text": "Data about when a learner focuses best, which representations work for their mind, optimal session length — that data serves the learner, not the institution. Big distinction." },
+    { "speaker": "Flow", "text": "Third — recognition of diverse intelligences. Implies multiple representations. The same concept shown visually, algebraically, verbally, kinesthetically. Different minds grasp things differently. Systems should adapt — not force everyone through the same channel." },
+    { "speaker": "Rain", "text": "And the fourth — epistemic humility is central. Every answer includes the conditions under which it might be wrong. Tools that model the move from certainty to doubt to belief, openly." },
+    { "speaker": "Flow", "text": "That's the posture. Ask questions, not give answers. Observe to improve, not surveil. Adapt to the mind, don't force the mind. Model doubt honestly. [slight pause] That's a different shape of tool than most of what's on the market right now." }
+  ]
+}

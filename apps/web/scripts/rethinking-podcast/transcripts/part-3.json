@@ -1,0 +1,24 @@
+{
+  "id": "part-3",
+  "title": "The Theoretical Foundation",
+  "estimatedMinutes": 6,
+  "anchor": "theoretical-framework-the-sapolsky-rogers-robinson-synthesis",
+  "lines": [
+    { "speaker": "Rain", "text": "OK this is the heart of the paper. It synthesizes three thinkers who never actually collaborated — Sapolsky, Rogers, Robinson — plus Dewey, Vygotsky, and Freire who thread through. Let's walk it." },
+    { "speaker": "Flow", "text": "Sapolsky first. He's a neurobiologist. His argument is what he calls cascading causation. Any human behavior can be traced backward through nested temporal levels. A neuron fires because of hormones — which reflect pathways from adolescence — which reflect childhood patterns — which reflect prenatal environment — which reflects culture — which reflects millions of years of evolution." },
+    { "speaker": "Rain", "text": "And his claim is there are no cracks in this chain. No gap where some hidden libertarian free will slips in." },
+    { "speaker": "Flow", "text": "If a child struggles with math, the deterministic frame says they're not lazy. Their brain developed differently based on factors they did not choose. The paper is careful here — earlier claims about a stark thirty-million-word gap from Hart and Risley have not held up under replication. Sperry and colleagues in 2019 found the story is more nuanced. What has survived is the broader pattern — family income and parental education really do correlate with measurable differences in cortical development at the low-income end. Noble and colleagues, 2015, N of eleven hundred." },
+    { "speaker": "Rain", "text": "So — environment shapes the brain. Not a word-count, but the conditions. The moral consequence — blame becomes incoherent. The only rational response to differential outcomes is to change conditions, not to punish persons." },
+    { "speaker": "Flow", "text": "Rogers next. Humanistic psychology. He posits something he calls the actualizing tendency. An innate drive in every organism to develop its potential." },
+    { "speaker": "Rain", "text": "The potato sprout illustration is the one I remember. Potatoes in a dark basement send pale twisted shoots toward whatever light they can find. The drive toward growth cannot be destroyed without destroying the organism itself." },
+    { "speaker": "Flow", "text": "And here the paper makes a move I appreciate. It says Rogers gives us the psychological substrate — the drive. But Dewey gives us the educational theorem. Rogers alone can't carry the argument because he's a therapist, not an educator." },
+    { "speaker": "Rain", "text": "Dewey's point — education is not preparation for life, it is life. The educator's task is to design the environment, because the environment is what actually educates. Imposing outcomes severs means from ends." },
+    { "speaker": "Flow", "text": "Then Robinson. Schools systematically suppress diverse intelligences. They maintain an invariant hierarchy — math and languages at the top, arts at the bottom. Certain cognitive styles get pathologized as deficiencies." },
+    { "speaker": "Rain", "text": "And the popular 98 to 2 percent creativity figure from Land and Jarman — the paper explicitly downgrades that as a trade book illustration. The peer-reviewed decline is carried by Kim, 2011 — a cross-temporal analysis of six Torrance Test samples, 272,000 people. The decline is real, smaller than the slogan, with the sharpest drop in kindergarten through third grade." },
+    { "speaker": "Flow", "text": "So the three-thinker circuit. Sapolsky says environment shapes the brain. Rogers says the drive toward growth is innate. Robinson documents the system blocking it." },
+    { "speaker": "Rain", "text": "And — this is where the paper really works hard — it doesn't hand-wave the Sapolsky-to-Rogers tension." },
+    { "speaker": "Flow", "text": "Right, because on the surface rigorous determinism and humanistic self-direction look incompatible. The paper says — don't retreat from Sapolsky. Grant him fully. Then notice the determinism is symmetric. It applies to the designers and the authors too, not just the students." },
+    { "speaker": "Rain", "text": "The move they use is Dennett-style compatibilism plus Dewey's pragmatism. What survives under determinism is the varieties of free will worth wanting — the capacity to respond to reasons, revise behavior, act on second-order preferences. And the ought comes from conditions that produce flourishing, empirically tractable." },
+    { "speaker": "Flow", "text": "Which, the closing line — determinism does not license paternalism, it disciplines it. If students' outcomes are conditions we create, our interventions are conditions we are accountable for." }
+  ]
+}

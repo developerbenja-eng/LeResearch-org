@@ -16,15 +16,18 @@ export default function TopNav() {
           LeResearch
         </Link>
 
-        <div className="flex items-center gap-6 text-[11px] font-mono tracking-wider uppercase text-white/50">
+        <div className="flex items-center gap-5 sm:gap-6 text-[11px] font-mono tracking-wider uppercase text-white/50">
           <Link href="/philosophy" className="hover:text-white transition-colors">
             Philosophy
+          </Link>
+          <Link href="/rethinking" className="hover:text-white transition-colors">
+            Rethinking
           </Link>
           <a
             href="https://ledesign.ai"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-white transition-colors"
+            className="hover:text-white transition-colors hidden sm:inline"
           >
             LeDesign ↗
           </a>
@@ -32,7 +35,7 @@ export default function TopNav() {
             href="https://github.com/developerbenja-eng/LeResearch-org"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-white transition-colors hidden sm:inline"
+            className="hover:text-white transition-colors hidden md:inline"
           >
             GitHub ↗
           </a>

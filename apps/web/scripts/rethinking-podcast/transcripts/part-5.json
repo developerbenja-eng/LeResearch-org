@@ -1,0 +1,18 @@
+{
+  "id": "part-5",
+  "title": "Three Levels of Learning",
+  "estimatedMinutes": 3,
+  "anchor": "the-three-levels-of-learning",
+  "lines": [
+    { "speaker": "Flow", "text": "OK this section is short but it's the one I'd ask anyone designing a learning tool to read first. Three levels of learning." },
+    { "speaker": "Rain", "text": "Level one — Content. The actual material. Math concepts, historical knowledge, scientific principles. What traditional education focuses on almost exclusively. What standardized tests measure." },
+    { "speaker": "Flow", "text": "Level two — Process. Metacognition. Learning how one learns. What conditions help focus. What representations work for a particular mind. When to step away and return fresh." },
+    { "speaker": "Rain", "text": "And the paper is careful here — metacognition isn't a private achievement. Vygotsky locates it as internalized dialogue. Every higher cognitive function appears first between people, then inside the child." },
+    { "speaker": "Flow", "text": "Which is why it's learnable at all. It's first performed in a relationship, in what Vygotsky called the Zone of Proximal Development, and then internalized." },
+    { "speaker": "Rain", "text": "So when a parent or a teacher or an AI tool helps a learner notice their own thinking — that's the move that builds level two. Not lecturing about it." },
+    { "speaker": "Flow", "text": "Level three — Identity. The deep belief \"I can figure out how to learn anything.\" Not content-specific. Transfers across domains. Intellectual autonomy." },
+    { "speaker": "Rain", "text": "The ultimate test of education becomes — when a student leaves, can they honestly say that sentence? If they mastered content but not that capacity, education has failed." },
+    { "speaker": "Flow", "text": "Content is the vehicle. Identity is the destination. [short pause] That distinction matters especially now — because if a learner reaches level three, they can navigate AI, obsolescing knowledge, new domains. If they stay at level one, they are dependent on being taught each new thing — or on AI doing the cognitive work for them." },
+    { "speaker": "Rain", "text": "And that second outcome is exactly the one the whole paper is trying to prevent." }
+  ]
+}

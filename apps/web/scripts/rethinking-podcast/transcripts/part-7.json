@@ -1,0 +1,20 @@
+{
+  "id": "part-7",
+  "title": "The Political Dimension",
+  "estimatedMinutes": 4,
+  "anchor": "the-political-dimension",
+  "lines": [
+    { "speaker": "Flow", "text": "This section is the one the authors seem most worried about being misread. So let's be careful." },
+    { "speaker": "Rain", "text": "The claim is simple. Education is always political. It either reproduces power structures or challenges them. Claiming to be apolitical is itself a political position — it reproduces the status quo by default." },
+    { "speaker": "Flow", "text": "And the paper turns to Gramsci to explain how. Hegemony — the way power operates through consent rather than force. The dominant classes maintain power not primarily through coercion but by shaping values so that people \"choose\" what serves the existing arrangement." },
+    { "speaker": "Rain", "text": "Education is central to that process. Althusser's argument — in mature capitalist societies, education has been installed in the dominant position among the institutions that reproduce the social order. More consequential than religion, family, or media for that work." },
+    { "speaker": "Flow", "text": "And the mechanism is the hidden curriculum. Show up on time. Follow instructions. Compete for limited rewards. Accept that authority will evaluate you. Interpret your rank as your merit. [sighs] That's the most powerful lesson, and it's the one the course catalog never mentions." },
+    { "speaker": "Rain", "text": "Here's where I think this paper does something the Gramsci-Althusser tradition often doesn't. It names the missing verb — Freire." },
+    { "speaker": "Flow", "text": "Say more." },
+    { "speaker": "Rain", "text": "Gramsci and Althusser tell you how reproduction works structurally. But if you only have them, you have a critique with no pedagogy. Freire supplies what they don't — the banking model versus problem-posing education. Dialogue not as a teaching technique but as the epistemological form of human freedom." },
+    { "speaker": "Flow", "text": "Conscientização. Learning to read the word by reading the world. Recognizing your situation as historical rather than natural — which means also unbuildable." },
+    { "speaker": "Rain", "text": "So the political implication isn't that education should take sides in some culture war. It's that education should cultivate the capacity for independent judgment. Otherwise democracy becomes merely procedural." },
+    { "speaker": "Flow", "text": "And this becomes — acutely urgent — when you consider AI's capacity for propaganda at an unprecedented scale. Traditional propaganda required human labor to produce. AI enables uniquely persuasive content tailored to each individual's psychological profile. That's technically possible today." },
+    { "speaker": "Rain", "text": "So epistemic humility — the cultivated practice of asking \"why should I believe this\" and \"who benefits\" — stops being a philosophical virtue. It becomes essential protection." }
+  ]
+}

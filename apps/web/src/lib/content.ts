@@ -92,8 +92,8 @@ export const PRODUCTS: Product[] = [
     name: 'Rethinking Education',
     blurb:
       'A living-draft research framework grounding the Echo family. Neurobiology, pedagogy, liberatory education, and epistemic infrastructure, updated as the evidence does.',
-    url: 'https://ledesign.ai/rethinking',
-    status: 'migrating',
+    url: '/rethinking',
+    status: 'live',
   },
   {
     id: 'poa-aquifer-explorer',

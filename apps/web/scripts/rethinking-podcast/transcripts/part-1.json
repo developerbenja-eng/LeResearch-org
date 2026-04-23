@@ -1,0 +1,22 @@
+{
+  "id": "part-1",
+  "title": "The Crisis",
+  "estimatedMinutes": 4,
+  "anchor": "current-crisis",
+  "lines": [
+    { "speaker": "Rain", "text": "Let's name what the crisis actually is. Because I think a lot of people hear \"AI and education\" and assume this is a conversation about cheating on homework." },
+    { "speaker": "Flow", "text": "Right, and it's — way bigger than that. The paper's claim is that the existential justification for modern schooling has collapsed." },
+    { "speaker": "Rain", "text": "Say more." },
+    { "speaker": "Flow", "text": "For about a century, we told kids — and ourselves — that you go to school to be prepared for a job. You learn content, you pass tests, you get a credential, the credential gets you employment. The quiet deal under the whole factory model." },
+    { "speaker": "Rain", "text": "And AI can now do a lot of that cognitive work." },
+    { "speaker": "Flow", "text": "At professional levels. Writing, analysis, synthesis, even some forms of judgment. So when a teacher says to a student — learn this, you'll need it for your career — the student can reasonably say, \"Will I?\"" },
+    { "speaker": "Rain", "text": "There's a stat in the paper that lands hard. As of 2024, an estimated 52% of online content is AI-generated. That shift happened in about two years." },
+    { "speaker": "Flow", "text": "So students are not just navigating a world where AI might take some jobs. They are already navigating an information environment where most of what they encounter wasn't created by humans." },
+    { "speaker": "Rain", "text": "And the responses from schools have been — uneven. A lot of bans." },
+    { "speaker": "Flow", "text": "Which the paper calls counterproductive. If the point of education is to prepare learners to navigate the world they're actually in, an AI-free classroom is preparing them for a world that doesn't exist. [sighs] You cannot build judgment inside a protected bubble and expect it to survive contact with the unprotected one." },
+    { "speaker": "Rain", "text": "So the crisis has a shape. The old justification — content mastery for job prep — doesn't hold. The world students will actually live in is saturated with synthetic content personalized to manipulate them." },
+    { "speaker": "Flow", "text": "And the question flips. It stops being \"how do we prepare workers?\" and becomes \"how do we prepare thinking humans?\"" },
+    { "speaker": "Rain", "text": "Which is — [short pause] a better mission, honestly, than job preparation ever was." },
+    { "speaker": "Flow", "text": "That's the paper's line, almost word for word. The tragedy is that it required existential threat to get us to ask it." }
+  ]
+}

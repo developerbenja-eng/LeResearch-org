@@ -1,0 +1,21 @@
+{
+  "id": "part-2",
+  "title": "Why Reforms Keep Failing",
+  "estimatedMinutes": 4,
+  "anchor": "why-reforms-keep-failing-the-grammar-of-schooling",
+  "lines": [
+    { "speaker": "Flow", "text": "Here's a question that haunts the whole field. Why do schools today look so much like schools in 1900?" },
+    { "speaker": "Rain", "text": "Despite a century of reforms. Progressive education, open classrooms, new math, standards movements, No Child Left Behind, ed-tech waves. All of them either got absorbed or rejected." },
+    { "speaker": "Flow", "text": "And the paper leans on Tyack and Cuban's term for this — the grammar of schooling." },
+    { "speaker": "Rain", "text": "I like that metaphor. Just like language has a deep grammar speakers internalize, schools have a persistent deep structure. Age-graded classrooms. Fifty-minute periods. Separated subjects. Letter grades." },
+    { "speaker": "Flow", "text": "And that grammar absorbs or rejects innovations. If a new teaching method works within fifty-minute periods, fine, adopt it. If it needs extended time blocks, it gets compressed, fragmented, and eventually abandoned — or it never gets tried at all." },
+    { "speaker": "Rain", "text": "Which is why most reforms either water down until they fit, or die." },
+    { "speaker": "Flow", "text": "Tyack and Cuban describe the pattern. But the paper pushes further — why is the grammar so persistent? And for that it turns to Althusser." },
+    { "speaker": "Rain", "text": "Althusser's argument, simplified — in mature capitalist societies, the educational institution has been installed as the dominant place where the social order gets reproduced. More than religion, more than family, more than media." },
+    { "speaker": "Flow", "text": "And the way it reproduces the order is mostly not through the content of lessons. It's through the structure itself. Show up on time. Follow instructions. Compete for limited rewards. Accept that authority will evaluate you. Interpret your rank as your merit." },
+    { "speaker": "Rain", "text": "That's the hidden curriculum, and it's what the architecture teaches regardless of whether the lesson is history or algebra." },
+    { "speaker": "Flow", "text": "So if you judge schools by whether they develop human potential, they look like they're failing. If you judge them by whether they produce workers who don't question fundamental arrangements, they are succeeding brilliantly." },
+    { "speaker": "Rain", "text": "Which is a — sobering but clarifying frame. Most reform is what Kuhn called normal science. Work inside the paradigm's assumptions. And normal science can't resolve the paradigm's anomalies." },
+    { "speaker": "Flow", "text": "Genuine change requires a shift, not an improvement." }
+  ]
+}

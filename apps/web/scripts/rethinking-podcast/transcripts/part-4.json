@@ -1,0 +1,25 @@
+{
+  "id": "part-4",
+  "title": "The Eight Principles",
+  "estimatedMinutes": 5,
+  "anchor": "eight-core-principles-for-educational-redesign",
+  "lines": [
+    { "speaker": "Rain", "text": "Now — the principles. The paper is explicit about this. These are not prescriptions. They're starting conditions for design." },
+    { "speaker": "Flow", "text": "Right. Past reforms codified specific practices that became dated. Principles can generate many implementations — responsive to context, faithful to foundations." },
+    { "speaker": "Rain", "text": "So — eight of them. Number one — Anthropological. Humans are biological systems shaped by environment across multiple timescales. Blame is incoherent. Intervention in conditions is everything." },
+    { "speaker": "Flow", "text": "From Sapolsky. Plain English — blame doesn't fix kids, conditions do." },
+    { "speaker": "Rain", "text": "Two — Developmental. Given supportive conditions, humans naturally move toward growth. Rogers gives the drive, Dewey names what the educator actually designs — the environment." },
+    { "speaker": "Flow", "text": "Plain — kids grow when conditions are right." },
+    { "speaker": "Rain", "text": "Three — Recognition. Human intelligence is diverse, dynamic, distinctive. Standardization is the enemy. Arts and embodied knowing deserve parity with abstract reasoning." },
+    { "speaker": "Flow", "text": "Different minds, equal standing. From Robinson." },
+    { "speaker": "Rain", "text": "Four — Epistemic. Intellectual humility is rationally required. Education must cultivate the questions \"why should I believe this?\" and \"who benefits from me believing this?\"" },
+    { "speaker": "Flow", "text": "Especially urgent when AI can personalize persuasive content at scale. Media literacy as traditionally conceived is insufficient." },
+    { "speaker": "Rain", "text": "Five — Temporal. All systems are context-dependent and will become maladaptive as context changes. Adaptation must be built into the core." },
+    { "speaker": "Flow", "text": "Six — Collective. Humans are individually weak and collectively powerful. Isolated reform efforts do not compound. Building connection matters as much as the work." },
+    { "speaker": "Rain", "text": "Plain — kids and parents aren't meant to do this alone." },
+    { "speaker": "Flow", "text": "Seven — Paradigmatic. Most educational reform is normal science within existing assumptions. Genuine change requires a paradigm shift, not incremental improvement." },
+    { "speaker": "Rain", "text": "Tinkering won't fix this." },
+    { "speaker": "Flow", "text": "And eight — Political. Education is always political. It either reproduces power structures or challenges them. Claiming to be apolitical reproduces the status quo by default." },
+    { "speaker": "Rain", "text": "That's the eight. The paper is careful to note — these are principles, not steps. A school applying all eight will look different in Memphis than it looks in Santiago. [slight pause] That's the feature, not the bug." }
+  ]
+}

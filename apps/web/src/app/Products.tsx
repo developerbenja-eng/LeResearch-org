@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { PRODUCTS, type Product } from '@/lib/content';
 
 const FAMILY_LABEL: Record<Product['family'], string> = {
@@ -52,7 +53,16 @@ export default function Products() {
                 )}
               </div>
             );
-            return p.url ? (
+            if (!p.url) return <div key={p.id}>{body}</div>;
+            const isInternal = p.url.startsWith('/');
+            if (isInternal) {
+              return (
+                <Link key={p.id} href={p.url} className="group block">
+                  {body}
+                </Link>
+              );
+            }
+            return (
               <a
                 key={p.id}
                 href={p.url}
@@ -62,8 +72,6 @@ export default function Products() {
               >
                 {body}
               </a>
-            ) : (
-              <div key={p.id}>{body}</div>
             );
           })}
         </div>
