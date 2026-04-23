@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { LinearVsPluralFrontend } from './components/LinearVsPluralFrontend';
 import { AISemanticBlackBox } from './components/AISemanticBlackBox';
+import { CalcifiedFrames } from './components/CalcifiedFrames';
+import { SilentVersioning } from './components/SilentVersioning';
+import { MirrorFailure } from './components/MirrorFailure';
 
 export const metadata: Metadata = {
   title: 'Philosophy · LeResearch',
@@ -138,6 +141,9 @@ export default function PhilosophyPage() {
             absorbed, operationally, as truths — as infrastructure, the
             same way gravity is infrastructure.
           </p>
+
+          <CalcifiedFrames />
+
           <p>
             Very few of them survive contact with the evidence. They are
             not uniformly wrong; some are approximately right for some
@@ -255,6 +261,8 @@ export default function PhilosophyPage() {
             accurate. It is the one whose business lasts longest in the
             AI-investment cycle we are currently inside.
           </p>
+
+          <SilentVersioning />
           <p>
             If a society routes its default truth-formation through a
             small number of privately-governed, silently-versioned
@@ -301,6 +309,8 @@ export default function PhilosophyPage() {
             one of a set of decisions that cumulatively reproduce the
             environment the first is a symptom of.
           </p>
+
+          <MirrorFailure />
           <p>
             Both failure modes produce the same outcome. They keep the
             dominant framework — whatever it is, technical or otherwise —
