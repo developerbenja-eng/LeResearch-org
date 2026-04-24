@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="homeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9333ea"/>
+      <stop offset="100%" style="stop-color:#ec4899"/>
+    </linearGradient>
+  </defs>
+  <!-- Background circle for maskable safe zone -->
+  <circle cx="256" cy="256" r="256" fill="url(#homeGradient)"/>
+  <!-- Echo "E" logo - centered in 40% safe zone -->
+  <g transform="translate(256, 256)">
+    <!-- Stylized E made of sound wave bars -->
+    <rect x="-70" y="-80" width="20" height="160" rx="10" fill="white" opacity="0.95"/>
+    <!-- Top bar -->
+    <rect x="-45" y="-80" width="90" height="18" rx="9" fill="white" opacity="0.95"/>
+    <!-- Middle bar (shorter for E) -->
+    <rect x="-45" y="-9" width="70" height="18" rx="9" fill="white" opacity="0.9"/>
+    <!-- Bottom bar -->
+    <rect x="-45" y="62" width="90" height="18" rx="9" fill="white" opacity="0.95"/>
+    <!-- Sound wave arcs on the right -->
+    <path d="M60 -40 Q90 0 60 40" stroke="white" stroke-width="12" fill="none" stroke-linecap="round" opacity="0.8"/>
+    <path d="M85 -55 Q125 0 85 55" stroke="white" stroke-width="10" fill="none" stroke-linecap="round" opacity="0.6"/>
+    <!-- Decorative dots -->
+    <circle cx="-85" cy="-85" r="5" fill="white" opacity="0.7"/>
+    <circle cx="90" cy="-80" r="4" fill="white" opacity="0.6"/>
+    <circle cx="-80" cy="85" r="4" fill="white" opacity="0.6"/>
+  </g>
+</svg>

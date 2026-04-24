@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="researchGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e"/>
+      <stop offset="100%" style="stop-color:#14b8a6"/>
+    </linearGradient>
+  </defs>
+  <circle cx="50" cy="50" r="38" fill="url(#researchGrad)" opacity="0.95"/>
+  <!-- Magnifier lens -->
+  <circle cx="44" cy="44" r="16" stroke="white" stroke-width="4" fill="none" opacity="0.95"/>
+  <!-- Handle -->
+  <line x1="56" y1="56" x2="72" y2="72" stroke="white" stroke-width="5" stroke-linecap="round" opacity="0.95"/>
+  <!-- Lightbulb inside lens (idea) -->
+  <path d="M44 36 C39 36, 36 40, 38 45 C39 47, 40 48, 40 50 L48 50 C48 48, 49 47, 50 45 C52 40, 49 36, 44 36 Z" fill="white" opacity="0.9"/>
+  <line x1="41" y1="52" x2="47" y2="52" stroke="white" stroke-width="1.5" opacity="0.95"/>
+</svg>

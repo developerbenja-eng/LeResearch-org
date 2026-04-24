@@ -1,0 +1,280 @@
+/* ═══════════════════════════════════════════════════════════════
+   @ledesign-ai/brand — shared LeDesign design tokens & primitives
+   ═══════════════════════════════════════════════════════════════
+
+   Import once from each app's layout.tsx (or globals.css) BEFORE
+   the app's own styles so app-level overrides win.
+
+   Each app sets its own --brand-r/g/b triple (usually from its
+   ledesign.json color field) to tint buttons, cards, focus rings,
+   and editorial accents. All other tokens are constant across
+   the LeDesign family.
+
+   Framework-agnostic: uses plain :root custom properties (no
+   @theme directive) so it works in Tailwind v3, v4, and vanilla.
+   ═══════════════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Surfaces ─────────────────────────────────────────── */
+  --color-bg: #05070c;
+  --color-bg-elevated: #0b0f17;
+  --color-bg-card: rgba(15, 23, 42, 0.55);
+  --color-bg-input: rgba(15, 23, 42, 0.7);
+
+  /* ── Text ─────────────────────────────────────────────── */
+  --color-text: #f1f5f9;
+  --color-text-dim: rgba(255, 255, 255, 0.55);
+  --color-text-muted: rgba(255, 255, 255, 0.35);
+
+  /* ── Borders ──────────────────────────────────────────── */
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-strong: rgba(255, 255, 255, 0.15);
+
+  /* ── Brand (override per app from ledesign.json.color) ─ */
+  /* Default is LeDesign's core violet (echo family accent). */
+  --brand-r: 167;
+  --brand-g: 139;
+  --brand-b: 250;
+  --color-accent: rgb(var(--brand-r), var(--brand-g), var(--brand-b));
+  --color-accent-hover: rgba(var(--brand-r), var(--brand-g), var(--brand-b), 0.85);
+  --color-brand: var(--color-accent);
+
+  /* Secondary sky — used sparingly for links/info cross-apps */
+  --color-info: #60a5fa;
+
+  /* ── Signal ───────────────────────────────────────────── */
+  --color-success: #4ade80;
+  --color-error: #f87171;
+  --color-warning: #facc15;
+
+  /* ── Shape ────────────────────────────────────────────── */
+  --radius-default: 10px;
+  --radius-card: 14px;
+
+  /* ── Type ─────────────────────────────────────────────── */
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco, Consolas, monospace;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+}
+
+/* ── Base ──────────────────────────────────────────────── */
+
+*:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Body styling intentionally opt-in (apps apply via .ld-body or
+   their own body selector) so we don't fight Tailwind preflight
+   or per-app global resets. */
+.ld-body {
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text);
+  color-scheme: dark;
+  line-height: 1.6;
+  font-size: 14px;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(var(--brand-r), var(--brand-g), var(--brand-b), 0.04), transparent 70%),
+    radial-gradient(ellipse 60% 50% at 80% 100%, rgba(96, 165, 250, 0.03), transparent 70%);
+  background-attachment: fixed;
+}
+
+/* ── Buttons ───────────────────────────────────────────── */
+
+.btn-primary,
+.btn-ghost,
+.btn-danger {
+  cursor: pointer;
+  border: none;
+  border-radius: var(--radius-default);
+  padding: 0.55rem 1.1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: inherit;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-primary {
+  background: var(--color-accent);
+  color: #0b0f17;
+  box-shadow: 0 4px 16px -6px rgba(var(--brand-r), var(--brand-g), var(--brand-b), 0.5);
+}
+.btn-primary:hover {
+  background: var(--color-accent-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px -8px rgba(var(--brand-r), var(--brand-g), var(--brand-b), 0.65);
+}
+.btn-primary:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.btn-ghost {
+  background: rgba(255, 255, 255, 0.02);
+  color: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--color-border);
+  backdrop-filter: blur(8px);
+}
+.btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.95);
+  border-color: var(--color-border-strong);
+}
+
+.btn-danger {
+  background: rgba(248, 113, 113, 0.1);
+  color: var(--color-error);
+  border: 1px solid rgba(248, 113, 113, 0.25);
+}
+.btn-danger:hover {
+  background: rgba(248, 113, 113, 0.18);
+  border-color: rgba(248, 113, 113, 0.4);
+}
+
+.btn-sm {
+  padding: 0.3rem 0.5rem;
+  font-size: 0.7rem;
+  border-radius: 6px;
+  min-height: 28px;
+  min-width: 28px;
+  white-space: nowrap;
+}
+
+/* ── Inputs ────────────────────────────────────────────── */
+
+.ld-input,
+input.ld-input,
+textarea.ld-input,
+select.ld-input {
+  background: var(--color-bg-input);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-default);
+  padding: 0.6rem 0.85rem;
+  font-size: 0.875rem;
+  width: 100%;
+  font-family: inherit;
+  transition: border-color 0.15s, background 0.15s;
+  backdrop-filter: blur(8px);
+}
+.ld-input:focus {
+  border-color: rgba(var(--brand-r), var(--brand-g), var(--brand-b), 0.5);
+  outline: none;
+  background: rgba(15, 23, 42, 0.85);
+}
+.ld-input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* ── Card (glass + brand-tinted top hairline) ──────────── */
+
+.card,
+.card-link {
+  position: relative;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(var(--brand-r), var(--brand-g), var(--brand-b), 0.04) 0%,
+      rgba(15, 23, 42, 0.55) 55%,
+      rgba(11, 15, 23, 0.7) 100%
+    );
+  border-radius: var(--radius-card);
+  border: 1px solid rgba(var(--brand-r), var(--brand-g), var(--brand-b), 0.1);
+  padding: 1.25rem;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px -8px rgba(0, 0, 0, 0.4);
+}
+.card::before,
+.card-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 1.25rem;
+  right: 1.25rem;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(var(--brand-r), var(--brand-g), var(--brand-b), 0.3),
+    transparent
+  );
+  pointer-events: none;
+}
+
+.card-link {
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.card-link::before { transition: background 0.25s; }
+.card-link:hover {
+  border-color: rgba(var(--brand-r), var(--brand-g), var(--brand-b), 0.35);
+  transform: translateY(-2px);
+  box-shadow: 0 16px 48px -8px rgba(0, 0, 0, 0.55);
+  color: inherit;
+}
+.card-link:hover::before {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(var(--brand-r), var(--brand-g), var(--brand-b), 0.55),
+    transparent
+  );
+}
+
+/* ── Badge ─────────────────────────────────────────────── */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.68rem;
+  border-radius: 999px;
+  white-space: nowrap;
+  font-family: var(--font-mono);
+  letter-spacing: 0.05em;
+}
+
+/* ── Eyebrow — the brand's signature monospace label ──── */
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: rgba(var(--brand-r), var(--brand-g), var(--brand-b), 0.65);
+  font-weight: 500;
+}
+
+.eyebrow-muted {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+  font-weight: 500;
+}
+
+/* ── Core animations (re-used across surfaces) ─────────── */
+
+@keyframes ld-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes ld-slide-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes ld-float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-6px); }
+}

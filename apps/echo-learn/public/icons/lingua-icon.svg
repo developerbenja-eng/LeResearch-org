@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="linguaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f43f5e"/>
+      <stop offset="100%" style="stop-color:#ec4899"/>
+    </linearGradient>
+  </defs>
+  <!-- Speech bubble -->
+  <path d="M20 25 C20 18, 27 12, 50 12 C73 12, 80 18, 80 25 L80 55 C80 62, 73 68, 50 68 L35 68 L25 80 L28 68 C23 66, 20 62, 20 55 Z" fill="url(#linguaGrad)" opacity="0.9"/>
+  <!-- Globe/language symbol -->
+  <circle cx="50" cy="40" r="15" stroke="white" stroke-width="2" fill="none" opacity="0.8"/>
+  <ellipse cx="50" cy="40" rx="6" ry="15" stroke="white" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <line x1="35" y1="40" x2="65" y2="40" stroke="white" stroke-width="1.5" opacity="0.6"/>
+  <line x1="38" y1="32" x2="62" y2="32" stroke="white" stroke-width="1" opacity="0.4"/>
+  <line x1="38" y1="48" x2="62" y2="48" stroke="white" stroke-width="1" opacity="0.4"/>
+  <!-- Musical notes (language through music) -->
+  <circle cx="68" cy="58" r="4" fill="white" opacity="0.9"/>
+  <line x1="72" y1="58" x2="72" y2="48" stroke="white" stroke-width="2" opacity="0.9"/>
+  <path d="M72 48 Q76 46, 75 50" stroke="white" stroke-width="2" fill="none" opacity="0.9"/>
+</svg>

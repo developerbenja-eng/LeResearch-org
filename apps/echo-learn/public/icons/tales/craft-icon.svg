@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="craftGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#a855f7"/>
+    </linearGradient>
+  </defs>
+  <circle cx="50" cy="50" r="38" fill="url(#craftGrad)" opacity="0.95"/>
+  <!-- Paper/craft sheet -->
+  <path d="M32 28 L62 28 L68 34 L68 74 L32 74 Z" fill="white" opacity="0.9"/>
+  <path d="M62 28 L62 34 L68 34 Z" fill="white" opacity="0.6"/>
+  <!-- craft lines -->
+  <line x1="38" y1="46" x2="60" y2="46" stroke="#8b5cf6" stroke-width="1.8" opacity="0.55" stroke-linecap="round"/>
+  <line x1="38" y1="54" x2="56" y2="54" stroke="#8b5cf6" stroke-width="1.8" opacity="0.55" stroke-linecap="round"/>
+  <!-- Paintbrush -->
+  <rect x="60" y="56" width="4" height="22" rx="1" fill="#8b5cf6" opacity="0.85" transform="rotate(30 62 67)"/>
+  <path d="M70 72 C74 68, 80 66, 80 66 C80 66, 78 72, 74 76 C72 78, 70 78, 68 76 Z" fill="white" opacity="0.95"/>
+</svg>

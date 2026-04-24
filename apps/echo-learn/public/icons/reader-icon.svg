@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="readerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <!-- Book base -->
+  <path d="M15 20 C15 15, 20 12, 50 12 C80 12, 85 15, 85 20 L85 75 C85 80, 80 83, 50 83 C20 83, 15 80, 15 75 Z" fill="url(#readerGrad)" opacity="0.9"/>
+  <!-- Book spine -->
+  <path d="M50 12 L50 83" stroke="white" stroke-width="2" opacity="0.3"/>
+  <!-- Page lines -->
+  <line x1="25" y1="28" x2="45" y2="28" stroke="white" stroke-width="2" opacity="0.7"/>
+  <line x1="25" y1="38" x2="42" y2="38" stroke="white" stroke-width="2" opacity="0.5"/>
+  <line x1="25" y1="48" x2="44" y2="48" stroke="white" stroke-width="2" opacity="0.7"/>
+  <line x1="25" y1="58" x2="40" y2="58" stroke="white" stroke-width="2" opacity="0.5"/>
+  <line x1="55" y1="28" x2="75" y2="28" stroke="white" stroke-width="2" opacity="0.7"/>
+  <line x1="55" y1="38" x2="72" y2="38" stroke="white" stroke-width="2" opacity="0.5"/>
+  <line x1="55" y1="48" x2="74" y2="48" stroke="white" stroke-width="2" opacity="0.7"/>
+  <line x1="55" y1="58" x2="70" y2="58" stroke="white" stroke-width="2" opacity="0.5"/>
+  <!-- Audio wave icon -->
+  <circle cx="50" cy="70" r="8" fill="white" opacity="0.9"/>
+  <path d="M46 70 L48 66 L50 72 L52 68 L54 70" stroke="#6366f1" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+</svg>

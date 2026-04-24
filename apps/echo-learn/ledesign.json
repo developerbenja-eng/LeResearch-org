@@ -1,0 +1,10 @@
+{
+  "id": "echo-learn",
+  "label": "Echo Learn",
+  "tagline": "Adaptive learning engine",
+  "description": "Music theory, anatomy, philosophy, language learning, and more — with AI tutoring, spaced repetition, and interactive 3D models.",
+  "color": [99, 102, 241],
+  "href": "https://echo-learn.ledesign.ai",
+  "status": "live",
+  "tags": ["AI/ML", "Adaptive Learning", "3D", "Music"]
+}

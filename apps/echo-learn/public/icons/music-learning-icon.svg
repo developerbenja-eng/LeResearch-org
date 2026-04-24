@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="musicLearnGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#14b8a6"/>
+    </linearGradient>
+  </defs>
+  <!-- Sound wave background -->
+  <circle cx="50" cy="50" r="38" fill="url(#musicLearnGrad)" opacity="0.9"/>
+  <!-- Treble clef stylized -->
+  <path d="M50 20 C45 20, 38 28, 38 36 C38 42, 42 46, 50 46 C42 46, 36 52, 36 60 C36 70, 45 76, 50 76" stroke="white" stroke-width="3" fill="none" opacity="0.9"/>
+  <line x1="50" y1="20" x2="50" y2="76" stroke="white" stroke-width="3" opacity="0.9"/>
+  <!-- Sound waves -->
+  <path d="M62 35 C66 40, 66 48, 62 53" stroke="white" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M68 30 C74 38, 74 50, 68 58" stroke="white" stroke-width="2" fill="none" opacity="0.5"/>
+  <path d="M74 25 C82 36, 82 52, 74 63" stroke="white" stroke-width="2" fill="none" opacity="0.3"/>
+  <!-- Note head -->
+  <ellipse cx="46" cy="60" rx="6" ry="4" fill="white" opacity="0.9" transform="rotate(-20 46 60)"/>
+</svg>

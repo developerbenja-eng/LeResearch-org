@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="storiesGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a855f7"/>
+      <stop offset="100%" style="stop-color:#ec4899"/>
+    </linearGradient>
+  </defs>
+  <circle cx="50" cy="50" r="38" fill="url(#storiesGrad)" opacity="0.95"/>
+  <!-- Open book -->
+  <path d="M50 36 C42 31, 28 29, 22 32 L22 66 C28 63, 42 64, 50 68 Z" fill="white" opacity="0.92"/>
+  <path d="M50 36 C58 31, 72 29, 78 32 L78 66 C72 63, 58 64, 50 68 Z" fill="white" opacity="0.82"/>
+  <line x1="50" y1="36" x2="50" y2="68" stroke="#a855f7" stroke-width="1.5" opacity="0.4"/>
+  <!-- Sparkles -->
+  <path d="M30 22 L31 25 L34 26 L31 27 L30 30 L29 27 L26 26 L29 25 Z" fill="white" opacity="0.9"/>
+  <path d="M72 20 L73 23 L76 24 L73 25 L72 28 L71 25 L68 24 L71 23 Z" fill="white" opacity="0.75"/>
+  <circle cx="80" cy="42" r="1.8" fill="white" opacity="0.8"/>
+</svg>
