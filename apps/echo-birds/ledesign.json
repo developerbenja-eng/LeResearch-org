@@ -1,0 +1,10 @@
+{
+  "id": "echo-birds",
+  "label": "Echo Birds",
+  "tagline": "Tennessee birding field guide",
+  "description": "87 species, 62 state parks, migration maps, sounds, quiz — an interactive guide to the birds of Tennessee.",
+  "color": [52, 211, 153],
+  "href": "https://echo-birds.ledesign.ai",
+  "status": "live",
+  "tags": ["Interactive Maps", "Audio", "Community Data"]
+}
