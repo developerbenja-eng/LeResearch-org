@@ -1,6 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": "nextjs",
-  "installCommand": "cd ../.. && rm -rf node_modules && npm install --no-audit --no-fund",
+  "installCommand": "cd ../.. && npm cache clean --force && rm -rf node_modules && npm install --no-audit --no-fund --no-package-lock",
   "ignoreCommand": "npx turbo-ignore @leresearch-org/web"
 }
