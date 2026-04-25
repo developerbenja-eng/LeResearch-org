@@ -1,6 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": "nextjs",
-  "installCommand": "cd ../.. && npm install --loglevel=verbose 2>&1 | tail -60",
+  "installCommand": "cd /vercel/path0 && npm install --no-audit --no-fund",
   "ignoreCommand": "npx turbo-ignore @leresearch-org/web"
 }
