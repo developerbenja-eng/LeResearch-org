@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { MyceliumBackground } from '@leresearch-org/brand';
+import { MyceliumBackground } from '@/components/brand/MyceliumBackground';
 import './globals.css';
 import TopNav from './TopNav';
 
