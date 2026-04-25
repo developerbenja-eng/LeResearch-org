@@ -63,6 +63,15 @@ export default function ThreadsPage() {
             section of the philosophy page will be updated to reference
             it directly.
           </p>
+          <p className="text-sm leading-relaxed text-white/50 mt-4 max-w-2xl">
+            Companion document:{' '}
+            <Link href="/philosophy/cases" className="text-white/85 underline decoration-white/30 underline-offset-4 hover:decoration-white">
+              /philosophy/cases
+            </Link>{' '}
+            — publicly documented worked examples that triangulate
+            the §4 / §7 / §1 arguments against the public record
+            rather than relying on any participant&apos;s account.
+          </p>
 
           {/* Quick nav */}
           <nav className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">

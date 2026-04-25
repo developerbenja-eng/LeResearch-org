@@ -40,3 +40,7 @@ yarn-error.log*
 # Typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Throwaway visual / sweep / quote-check scripts at repo root
+# (kept local for ad-hoc verification; not shipped)
+/*.mjs

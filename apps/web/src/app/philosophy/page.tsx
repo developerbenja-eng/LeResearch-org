@@ -506,6 +506,18 @@ export default function PhilosophyPage() {
             behavior rather than a thing that has to be insisted on under
             pressure.
           </p>
+          <p className="text-sm text-white/55 border-l border-white/10 pl-4 italic">
+            For publicly documented cases of this pattern in
+            operation — including the NYC Department of Education
+            ChatGPT ban-and-reversal as a near-textbook execution
+            and the Memphis xAI opposition as a counter-example
+            of substantive (not pathological) refusal — see{' '}
+            <Link href="/philosophy/cases" className="text-white/75 hover:text-white not-italic underline decoration-white/20 underline-offset-4 hover:decoration-white">
+              /philosophy/cases
+            </Link>. The framework should be triangulated against
+            the public record, not just against any participant&apos;s
+            account.
+          </p>
         </Section>
 
         <Section id="tension" num="8" title="The tension LeResearch exists to hold">
