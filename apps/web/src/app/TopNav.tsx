@@ -17,10 +17,13 @@ export default function TopNav() {
         </Link>
 
         <div className="flex items-center gap-5 sm:gap-6 text-[11px] font-mono tracking-wider uppercase text-white/50">
+          <Link href="/ai" className="hover:text-white transition-colors">
+            AI
+          </Link>
           <Link href="/philosophy" className="hover:text-white transition-colors">
             Philosophy
           </Link>
-          <Link href="/rethinking" className="hover:text-white transition-colors">
+          <Link href="/rethinking" className="hover:text-white transition-colors hidden sm:inline">
             Rethinking
           </Link>
           <a

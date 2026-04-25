@@ -24,10 +24,9 @@ html, body {
 }
 
 body {
-  background:
-    radial-gradient(ellipse at top left, rgba(167, 139, 250, 0.08) 0%, transparent 50%),
-    radial-gradient(ellipse at bottom right, rgba(96, 165, 250, 0.06) 0%, transparent 50%),
-    var(--bg);
+  /* Mycelium canvas paints its own radial glows; body keeps a flat dark
+     bg so we don't double-glow. */
+  background: var(--bg);
   min-height: 100vh;
 }
 

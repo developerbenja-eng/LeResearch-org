@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { MyceliumBackground } from '@leresearch-org/brand';
 import './globals.css';
 import TopNav from './TopNav';
 
@@ -22,8 +23,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        {/* Shared LeDesign-family mycelium backdrop. Fixed, pointer-events-none, z-0. */}
+        <MyceliumBackground intensity={0.6} />
         <TopNav />
-        <div className="pt-14">{children}</div>
+        <div className="pt-14 relative z-[1]">{children}</div>
       </body>
     </html>
   );

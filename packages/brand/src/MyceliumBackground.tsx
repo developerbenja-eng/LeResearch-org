@@ -211,6 +211,7 @@ export function MyceliumBackground({
         inset: 0,
         pointerEvents: 'none',
         zIndex: 0,
+        overflow: 'hidden', // clip the off-screen radial blobs so they don't widen documentElement.scrollWidth
       }}
     >
       {!hideGlows && (
