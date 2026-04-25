@@ -1,6 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": "nextjs",
-  "installCommand": "cd ../.. && npx --yes npm@9 install --no-audit --no-fund",
+  "installCommand": "cd ../.. && cat /vercel/.npm/_logs/$(ls -t /vercel/.npm/_logs/ 2>/dev/null | head -1) 2>/dev/null; echo '--- env:'; env | grep -i npm; echo '--- pwd:'; pwd; echo '--- ls:'; ls -la; echo '--- npm version:'; npm --version; echo '--- attempting install:'; npm install --no-audit --no-fund --loglevel=verbose 2>&1 | tail -40; exit 1",
   "ignoreCommand": "npx turbo-ignore @leresearch-org/web"
 }
