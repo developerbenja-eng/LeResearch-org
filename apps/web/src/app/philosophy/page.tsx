@@ -715,9 +715,63 @@ export default function PhilosophyPage() {
           </p>
         </Section>
       </article>
+
+      {/* Where to go from here — three labeled forward paths so a reader
+          who finishes the spine isn't dead-ended at the closing note. */}
+      <section className="px-6 py-16 border-t border-white/5">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-[10px] font-mono tracking-[0.35em] uppercase text-white/40 mb-6">
+            Where to go from here
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+            {OUTRO_LINKS.map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className="group rounded-xl border border-white/10 bg-white/[0.02] p-5 hover:bg-white/[0.05] hover:border-white/20 transition-colors"
+              >
+                <div
+                  className="text-[10px] font-mono tracking-[0.3em] uppercase mb-2"
+                  style={{ color: l.accent }}
+                >
+                  {l.label}
+                </div>
+                <div className="text-base text-white/85 group-hover:text-white leading-snug mb-1.5">
+                  {l.title}
+                </div>
+                <div className="text-xs text-white/55 leading-relaxed">{l.blurb}</div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
+
+const OUTRO_LINKS = [
+  {
+    href: '/philosophy/cases',
+    label: 'Companion · cases',
+    title: 'See the pattern in the public record',
+    blurb: 'Documented cases that triangulate §1, §4, and §7 against the public record — NYC DOE, Memphis xAI, SAG-AFTRA, EU AI Act.',
+    accent: 'rgba(245,158,11,0.85)',
+  },
+  {
+    href: '/philosophy/threads',
+    label: 'Companion · threads',
+    title: 'Read the thinkers behind each section',
+    blurb: 'Thirteen open literature threads — Castoriadis, Anderson, Bourdieu, Pauly, Kuhn, Klein, Schmachtenberger, Graeber × 2, Zuboff, Searle, Berger & Luckmann, Harari.',
+    accent: 'rgba(167,139,250,0.85)',
+  },
+  {
+    href: '/ai/real-problem',
+    label: 'Investigation · applied',
+    title: 'Watch the framework applied to AI discourse',
+    blurb: 'Four-act investigation — what AI is, what its actual footprint looks like, who tracks it, and why the discourse we hear is the one we hear.',
+    accent: 'rgba(96,165,250,0.85)',
+  },
+] as const;
 
 // ───── Layout primitives ─────────────────────────────────────────
 

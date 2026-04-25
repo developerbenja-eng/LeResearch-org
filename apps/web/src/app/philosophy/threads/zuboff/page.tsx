@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { ThreadSeeAlso } from '../_components/ThreadSeeAlso';
 
 export const metadata: Metadata = {
   title: 'Zuboff · Open threads · LeResearch',
@@ -513,6 +514,9 @@ export default function ZuboffDeepPage() {
           </ul>
         </Section>
       </article>
+
+      <ThreadSeeAlso slug="zuboff" />
+
 
       <footer className="px-6 pt-20 pb-10 border-t border-white/5 mt-16">
         <div className="max-w-3xl mx-auto text-sm text-white/55 leading-relaxed space-y-4">

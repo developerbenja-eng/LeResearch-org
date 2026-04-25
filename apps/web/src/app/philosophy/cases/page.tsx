@@ -17,10 +17,17 @@ export default function CasesPage() {
       {/* Header */}
       <header className="px-6 pt-24 pb-10 border-b border-white/5">
         <div className="max-w-3xl mx-auto">
-          <div className="flex items-center gap-3 text-[10px] font-mono tracking-[0.35em] uppercase text-white/40 mb-6">
-            <Link href="/philosophy" className="hover:text-white transition-colors">← Philosophy</Link>
+          <div className="flex items-center gap-3 text-[10px] font-mono tracking-[0.35em] uppercase text-white/40 mb-2">
+            <Link href="/" className="hover:text-white transition-colors">LeResearch</Link>
             <span className="text-white/20">/</span>
-            <Link href="/philosophy/threads" className="hover:text-white transition-colors">Open threads</Link>
+            <Link href="/philosophy" className="hover:text-white transition-colors">Philosophy</Link>
+            <span className="text-white/20">/</span>
+            <span className="text-white/70">Cases</span>
+          </div>
+          <div className="text-[10px] font-mono tracking-[0.3em] uppercase text-white/30 mb-6">
+            <Link href="/philosophy/threads" className="hover:text-white transition-colors">
+              ↗ Threads (companion)
+            </Link>
           </div>
           <div className="text-[10px] font-mono tracking-[0.35em] uppercase text-white/40 mb-4">
             Philosophy · documented cases · living document

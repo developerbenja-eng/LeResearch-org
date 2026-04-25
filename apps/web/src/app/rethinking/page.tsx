@@ -80,7 +80,7 @@ function Hero() {
     >
       <div className="max-w-3xl mx-auto text-center">
         <Link href="/" className="inline-flex items-center gap-2 text-[10px] font-mono tracking-[0.35em] uppercase text-white/30 hover:text-white/50 transition-colors mb-10">
-          ← LeDesign
+          ← LeResearch
         </Link>
         <p className="text-[10px] font-mono tracking-[0.4em] uppercase text-white/30 mb-5">
           Research · Echo-Family
@@ -329,7 +329,7 @@ function Close() {
         </p>
         <div className="flex items-center justify-center gap-4 text-[10px] font-mono tracking-[0.3em] uppercase">
           <Link href="/" className="text-white/30 hover:text-white/60 transition-colors">
-            ← Back to LeDesign
+            ← Back to LeResearch
           </Link>
           <span className="text-white/15">·</span>
           <a
