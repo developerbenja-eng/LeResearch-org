@@ -8,6 +8,7 @@ import { SectionHeader } from '@/components/ai/SectionHeader';
 import { TLDRStrip, type TLDRItem } from '@/components/ai/TLDRStrip';
 import { SeriesPager } from '@/components/site/SeriesPager';
 import { RelatedRail } from '@/components/site/RelatedRail';
+import { TagAxes } from '@/components/site/TagAxes';
 import { TrackerMap } from './_components/TrackerMap';
 import { CapabilityClimb } from './_components/CapabilityClimb';
 
@@ -80,6 +81,7 @@ export default function TrackingPage() {
             <em className="text-white/85 not-italic font-normal">who funds the question</em>{' '}
             is half of knowing what the answer means.
           </p>
+          <TagAxes className="mt-6" />
         </header>
 
         {/* TLDR strip */}

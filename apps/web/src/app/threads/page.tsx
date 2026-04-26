@@ -13,6 +13,7 @@ import { SchmachtenbergerDiagram } from './_diagrams/Schmachtenberger';
 import { GraeberBSJDiagram } from './_diagrams/GraeberBSJ';
 import { GraeberDebtDiagram } from './_diagrams/GraeberDebt';
 import { ZuboffDiagram } from './_diagrams/Zuboff';
+import { TagAxes } from '@/components/site/TagAxes';
 
 export const metadata: Metadata = {
   title: 'Philosophy · Open threads',
@@ -72,6 +73,8 @@ export default function ThreadsPage() {
             the §4 / §7 / §1 arguments against the public record
             rather than relying on any participant&apos;s account.
           </p>
+
+          <TagAxes className="mt-8" />
 
           {/* Quick nav */}
           <nav className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">

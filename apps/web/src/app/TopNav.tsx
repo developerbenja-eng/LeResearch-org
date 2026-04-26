@@ -26,6 +26,9 @@ export default function TopNav() {
           <Link href="/initiatives" className="hover:text-white transition-colors hidden sm:inline">
             Initiatives
           </Link>
+          <Link href="/topics" className="hover:text-white transition-colors hidden md:inline">
+            Topics
+          </Link>
           <Link href="/tracks" className="hover:text-white transition-colors hidden sm:inline">
             Tracks
           </Link>

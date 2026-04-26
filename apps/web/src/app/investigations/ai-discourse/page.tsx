@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { HeroPincer } from './_components/HeroPincer';
+import { TagAxes } from '@/components/site/TagAxes';
 
 export const metadata: Metadata = {
   title: 'The real problem with AI · LeResearch',
@@ -77,6 +78,8 @@ export default function AIIndexPage() {
           dates, dollar amounts, and victims. This investigation builds the
           documentary case for that frame across four acts.
         </p>
+
+        <TagAxes className="mt-8" />
       </section>
 
       {/* Visual abstract — same color language as Act IV's full thesis figure */}

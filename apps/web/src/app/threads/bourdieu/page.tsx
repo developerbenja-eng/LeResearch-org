@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { RelatedRail } from '@/components/site/RelatedRail';
 import { EpistemicBadge } from '@/components/site/EpistemicBadge';
+import { TagAxes } from '@/components/site/TagAxes';
 
 export const metadata: Metadata = {
   title: 'Bourdieu · Open threads · LeResearch',
@@ -69,6 +70,7 @@ export default function BourdieuDeepPage() {
             are approximate they are flagged. Will be revised.
           </p>
 
+          <TagAxes className="mt-8" />
           <nav className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
             {SECTIONS.map((s) => (
               <a key={s.id} href={`#${s.id}`} className="group flex items-center gap-3 py-1.5 text-white/50 hover:text-white transition-colors">

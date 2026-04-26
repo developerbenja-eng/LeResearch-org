@@ -8,6 +8,7 @@ import { SectionHeader } from '@/components/ai/SectionHeader';
 import { TLDRStrip, type TLDRItem } from '@/components/ai/TLDRStrip';
 import { SeriesPager } from '@/components/site/SeriesPager';
 import { RelatedRail } from '@/components/site/RelatedRail';
+import { TagAxes } from '@/components/site/TagAxes';
 import { DefinitionsMatrix } from './_components/DefinitionsMatrix';
 import { AIEffectTimeline } from './_components/AIEffectTimeline';
 import { AISemanticBlackBox } from '@/app/thesis/components/AISemanticBlackBox';
@@ -84,6 +85,7 @@ export default function DefinitionsPage() {
             Eighteen mainstream definitions, no two of them agree on the
             same set of artefacts.
           </p>
+          <TagAxes className="mt-6" />
         </header>
 
         {/* TLDR strip */}

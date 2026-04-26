@@ -1,6 +1,15 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { TRACKS } from '@/lib/content';
+import { routesByTrack, type TrackId } from '@/components/site/route-registry';
+
+const NUM_TO_TRACK: Record<string, TrackId> = {
+  '01': 'aquifers',
+  '02': 'food',
+  '03': 'learning',
+  '04': 'ai',
+  '05': 'methodology',
+};
 
 export const metadata: Metadata = {
   title: 'Tracks · LeResearch',
@@ -48,10 +57,13 @@ export default function TracksPage() {
       <section className="max-w-3xl mx-auto space-y-4">
         {TRACKS.map((t) => {
           const s = STATUS_STYLE[t.status];
+          const slug = NUM_TO_TRACK[t.num];
+          const count = slug ? routesByTrack(slug).length : 0;
           return (
-            <article
+            <Link
               key={t.num}
-              className="rounded-xl border border-white/10 bg-white/[0.02] p-6"
+              href={slug ? `/tracks/${slug}` : '/tracks'}
+              className="group block rounded-xl border border-white/10 bg-white/[0.02] p-6 hover:bg-white/[0.05] hover:border-white/20 transition-colors"
             >
               <div className="flex items-baseline gap-3 mb-3">
                 <div className="text-[10px] font-mono tracking-[0.3em] uppercase text-white/30">
@@ -63,8 +75,11 @@ export default function TracksPage() {
                 >
                   {s.label}
                 </span>
+                <span className="ml-auto text-[10px] font-mono tracking-[0.2em] uppercase text-white/30 group-hover:text-white/55">
+                  {count} {count === 1 ? 'page' : 'pages'}
+                </span>
               </div>
-              <h2 className="text-xl font-light text-white/95 leading-snug mb-3">
+              <h2 className="text-xl font-light text-white/95 group-hover:text-white leading-snug mb-3">
                 {t.name}
               </h2>
               <p className="text-sm text-white/65 leading-relaxed mb-3 italic">
@@ -73,24 +88,17 @@ export default function TracksPage() {
               <p className="text-sm text-white/55 leading-relaxed">
                 {t.detail}
               </p>
-            </article>
+            </Link>
           );
         })}
 
         <p className="text-sm text-white/45 leading-relaxed mt-10 italic">
-          Per-track pages with cross-cuts to{' '}
-          <Link href="/investigations" className="text-white/65 hover:text-white underline decoration-dotted underline-offset-2">
-            investigations
-          </Link>,{' '}
-          <Link href="/cases" className="text-white/65 hover:text-white underline decoration-dotted underline-offset-2">
-            cases
-          </Link>, and{' '}
-          <Link href="/threads" className="text-white/65 hover:text-white underline decoration-dotted underline-offset-2">
-            threads
+          The companion browsing axis is{' '}
+          <Link href="/topics" className="text-white/70 hover:text-white underline decoration-dotted underline-offset-2">
+            /topics
           </Link>{' '}
-          land as each track accumulates enough material to triangulate.
-          The substrate axis is currently rendered from a single typed list;
-          the per-track filter views are part of the next chrome layer.
+          — the conceptual cross-cuts (capacity, normalization, labor,
+          surveillance, monoculture, …) that span the substrates.
         </p>
       </section>
     </div>

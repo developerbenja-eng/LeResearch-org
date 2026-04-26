@@ -11,6 +11,7 @@ import { LaborDecomposition } from './components/LaborDecomposition';
 import { TensionDiagram } from './components/TensionDiagram';
 import { PrinciplesWheel } from './components/PrinciplesWheel';
 import { EpistemicBadge } from '@/components/site/EpistemicBadge';
+import { TagAxes } from '@/components/site/TagAxes';
 
 export const metadata: Metadata = {
   title: 'Philosophy · LeResearch',
@@ -55,6 +56,8 @@ export default function PhilosophyPage() {
             something is wrong — either with the org or with how we are
             listening to the work.
           </p>
+
+          <TagAxes className="mt-8" />
 
           {/* Quick nav */}
           <nav className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">

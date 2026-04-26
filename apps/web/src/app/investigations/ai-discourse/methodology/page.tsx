@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { TagAxes } from '@/components/site/TagAxes';
 
 export const metadata: Metadata = {
   title: 'Methodology · LeResearch · The real problem with AI',
@@ -30,6 +31,7 @@ export default function MethodologyPage() {
           A short description of where the numbers come from, how the
           claims are tracked, and what we are intentionally not doing.
         </p>
+        <TagAxes className="mt-6" />
       </header>
 
       <article className="max-w-3xl mx-auto space-y-12 text-white/75">

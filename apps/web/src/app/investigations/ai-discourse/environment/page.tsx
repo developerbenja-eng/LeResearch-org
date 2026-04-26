@@ -8,6 +8,7 @@ import { SectionHeader } from '@/components/ai/SectionHeader';
 import { TLDRStrip, type TLDRItem } from '@/components/ai/TLDRStrip';
 import { SeriesPager } from '@/components/site/SeriesPager';
 import { RelatedRail } from '@/components/site/RelatedRail';
+import { TagAxes } from '@/components/site/TagAxes';
 import { ScaleLadder } from './_components/ScaleLadder';
 import { ModelEnergyMap } from './_components/ModelEnergyMap';
 import { WhoPays } from './_components/WhoPays';
@@ -81,6 +82,7 @@ export default function EnvironmentPage() {
             planet&rdquo;) and dismissive hand-waving (&ldquo;it&apos;s
             nothing&rdquo;). The honest picture requires three lenses.
           </p>
+          <TagAxes className="mt-6" />
         </header>
 
         {/* TLDR strip */}

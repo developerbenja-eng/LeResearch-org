@@ -8,6 +8,7 @@ import { SectionHeader } from '@/components/ai/SectionHeader';
 import { TLDRStrip, type TLDRItem } from '@/components/ai/TLDRStrip';
 import { SeriesPager } from '@/components/site/SeriesPager';
 import { RelatedRail } from '@/components/site/RelatedRail';
+import { TagAxes } from '@/components/site/TagAxes';
 import { DiscoursePincer } from './_components/DiscoursePincer';
 import { PublicVsElite } from './_components/PublicVsElite';
 import { DisplacedHarmsAtlas } from './_components/DisplacedHarmsAtlas';
@@ -84,6 +85,7 @@ export default function RealProblemPage() {
             This act answers <em className="text-white/85 not-italic font-normal">why we are discussing it the way we are</em>{' '}
             — and what is being kept out of view as a consequence.
           </p>
+          <TagAxes className="mt-6" />
         </header>
 
         {/* TLDR strip — read in 30 seconds */}

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { EpistemicBadge } from '@/components/site/EpistemicBadge';
+import { TagAxes } from '@/components/site/TagAxes';
 import { RelatedRail } from '@/components/site/RelatedRail';
 
 export const metadata: Metadata = {
@@ -66,6 +67,8 @@ export default function CasesPage() {
             (where appropriate) reclassified. Disconfirming cases
             are particularly welcome.
           </p>
+
+          <TagAxes className="mt-8" />
 
           {/* Quick nav */}
           <nav className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">

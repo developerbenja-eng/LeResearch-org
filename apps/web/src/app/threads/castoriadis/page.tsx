@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { RelatedRail } from '@/components/site/RelatedRail';
 import { EpistemicBadge } from '@/components/site/EpistemicBadge';
+import { TagAxes } from '@/components/site/TagAxes';
 
 export const metadata: Metadata = {
   title: 'Castoriadis · Open threads · LeResearch',
@@ -75,6 +76,7 @@ export default function CastoriadisDeepPage() {
           </p>
 
           {/* Quick nav */}
+          <TagAxes className="mt-8" />
           <nav className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
             {SECTIONS.map((s) => (
               <a
