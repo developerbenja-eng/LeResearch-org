@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { EpistemicBadge } from '@/components/site/EpistemicBadge';
+import { RelatedRail } from '@/components/site/RelatedRail';
 
 export const metadata: Metadata = {
   title: 'Philosophy · Documented cases',
@@ -29,8 +31,11 @@ export default function CasesPage() {
               ↗ Threads (companion)
             </Link>
           </div>
-          <div className="text-[10px] font-mono tracking-[0.35em] uppercase text-white/40 mb-4">
-            Philosophy · documented cases · living document
+          <div className="flex items-center gap-3 flex-wrap mb-4">
+            <span className="text-[10px] font-mono tracking-[0.35em] uppercase text-white/40">
+              Documented cases · living document
+            </span>
+            <EpistemicBadge />
           </div>
           <h1 className="text-4xl sm:text-5xl font-extralight tracking-tight text-white/90 leading-[1.08] mb-6">
             The pattern in the public record.
@@ -522,6 +527,8 @@ export default function CasesPage() {
           </p>
         </div>
       </footer>
+
+      <RelatedRail />
     </div>
   );
 }

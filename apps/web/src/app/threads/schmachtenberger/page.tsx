@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { ThreadSeeAlso } from '../_components/ThreadSeeAlso';
+import { RelatedRail } from '@/components/site/RelatedRail';
+import { EpistemicBadge } from '@/components/site/EpistemicBadge';
 
 export const metadata: Metadata = {
   title: 'Schmachtenberger · Open threads · LeResearch',
@@ -22,8 +23,11 @@ export default function SchmachtenbergerDeepPage() {
             <span className="text-white/20">/</span>
             <Link href="/threads" className="hover:text-white transition-colors">Open threads</Link>
           </div>
-          <div className="text-[10px] font-mono tracking-[0.35em] uppercase text-white/40 mb-4">
-            Cluster II.4 · deeper treatment
+          <div className="flex items-center gap-3 flex-wrap mb-4">
+            <span className="text-[10px] font-mono tracking-[0.35em] uppercase text-white/40">
+              Cluster II.4 · deeper treatment
+            </span>
+            <EpistemicBadge />
           </div>
           <h1 className="text-4xl sm:text-5xl font-extralight tracking-tight text-white/90 leading-[1.08] mb-3">
             Daniel Schmachtenberger
@@ -465,7 +469,7 @@ export default function SchmachtenbergerDeepPage() {
         </Section>
       </article>
 
-      <ThreadSeeAlso slug="schmachtenberger" />
+      <RelatedRail />
 
 
       <footer className="px-6 pt-20 pb-10 border-t border-white/5 mt-16">

@@ -18,7 +18,7 @@ about total water intake, not drinking water, and it said so in
 the original text. The number got copied without the qualifier
 into popular health writing, and by the 1980s it had become
 universal common sense. The qualifier — *most of it comes from
-food* — had been forgotten. The number was preserved.[^1]
+food* — had been forgotten. The number was preserved.[^ch2-1]
 
 Two thousand calories is a 1993 FDA rounding decision for the
 Nutrition Labeling and Education Act, chosen for label-printing
@@ -46,7 +46,7 @@ beginning a few hours after sundown, a wakeful interval of one to
 two hours in the middle of the night during which people read,
 prayed, conversed, or had sex, and a *second sleep* until dawn.
 The historical record on segmented sleep is clear and goes back
-centuries.[^2] The eight-hour-continuous-block expectation is
+centuries.[^ch2-2] The eight-hour-continuous-block expectation is
 younger than the lightbulb. Insomniacs who wake up at three in
 the morning and cannot fall back asleep are often experiencing
 the natural human sleep pattern that the industrial schedule has
@@ -101,7 +101,7 @@ people like us do in this situation*), and then an institution
 (*this is what is done*). *Internalization* is the third: new
 members of the institution — children, recruits, new employees —
 encounter it as a fully formed external reality, learn to navigate
-it, and eventually identify with the roles it offers them.[^3]
+it, and eventually identify with the roles it offers them.[^ch2-3]
 
 The pattern is happening all the time, in every institution, at
 every scale. The eight-glasses-of-water rule went through the
@@ -133,7 +133,7 @@ through the rest of the book — is that the contingent frame
 *calcifies into infrastructure*. Bourdieu called the same
 phenomenon *doxa*: the space of the taken-for-granted, the
 assumptions so deeply shared they are not even available to be
-debated.[^4] All three terminologies — Berger and Luckmann's
+debated.[^ch2-4] All three terminologies — Berger and Luckmann's
 *reification*, Bourdieu's *doxa*, the framework's *calcified
 frame* — are pointing at the same observation. A society
 contains a great deal of background that nobody is currently
@@ -242,25 +242,25 @@ makes change at low gradient invisible to us by design, and
 which reserves our awareness for change steep enough to fire
 many sensors at once.
 
-[^1]: The 1945 misreading is documented in Heinz Valtin,
+[^ch2-1]: The 1945 misreading is documented in Heinz Valtin,
 *Drink at Least Eight Glasses of Water a Day. Really? Is
 There Scientific Evidence for "8 × 8"?* American Journal of
 Physiology — Regulatory, Integrative and Comparative
 Physiology 283, no. 5 (2002): R993–R1004.
 
-[^2]: A. Roger Ekirch, *At Day's Close: Night in Times Past*
+[^ch2-2]: A. Roger Ekirch, *At Day's Close: Night in Times Past*
 (W. W. Norton, 2005); see also Ekirch's foundational paper,
 *Sleep We Have Lost: Pre-Industrial Slumber in the British
 Isles*, American Historical Review 106, no. 2 (April 2001):
 343–386.
 
-[^3]: Peter L. Berger and Thomas Luckmann, *The Social
+[^ch2-3]: Peter L. Berger and Thomas Luckmann, *The Social
 Construction of Reality: A Treatise in the Sociology of
 Knowledge* (Doubleday, 1966), particularly Part II,
 *Society as Objective Reality*. The three-step rhythm is
 laid out across the early chapters of Part II.
 
-[^4]: Pierre Bourdieu, *Outline of a Theory of Practice*
+[^ch2-4]: Pierre Bourdieu, *Outline of a Theory of Practice*
 (Cambridge University Press, 1977; original French
 *Esquisse d'une théorie de la pratique*, 1972). The
 *doxa / orthodoxy / heterodoxy* distinction appears in

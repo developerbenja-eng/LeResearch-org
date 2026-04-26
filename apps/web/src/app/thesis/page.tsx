@@ -10,6 +10,7 @@ import { LiteratureMap } from './components/LiteratureMap';
 import { LaborDecomposition } from './components/LaborDecomposition';
 import { TensionDiagram } from './components/TensionDiagram';
 import { PrinciplesWheel } from './components/PrinciplesWheel';
+import { EpistemicBadge } from '@/components/site/EpistemicBadge';
 
 export const metadata: Metadata = {
   title: 'Philosophy · LeResearch',
@@ -33,8 +34,11 @@ export default function PhilosophyPage() {
           >
             ← LeResearch
           </Link>
-          <div className="text-[10px] font-mono tracking-[0.35em] uppercase text-white/40 mb-4">
-            Philosophy · living document
+          <div className="flex items-center gap-3 flex-wrap mb-4">
+            <span className="text-[10px] font-mono tracking-[0.35em] uppercase text-white/40">
+              Philosophy · living document
+            </span>
+            <EpistemicBadge />
           </div>
           <h1 className="text-4xl sm:text-5xl font-extralight tracking-tight text-white/90 leading-[1.08] mb-6">
             The thesis, the observations, and the tension at the center of the work.

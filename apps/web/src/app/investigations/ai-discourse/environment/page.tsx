@@ -6,7 +6,8 @@ import { ClaimCard } from '@/components/ai/ClaimCard';
 import { StalenessFooter } from '@/components/ai/StalenessFooter';
 import { SectionHeader } from '@/components/ai/SectionHeader';
 import { TLDRStrip, type TLDRItem } from '@/components/ai/TLDRStrip';
-import { ActPager } from '@/components/ai/ActPager';
+import { SeriesPager } from '@/components/site/SeriesPager';
+import { RelatedRail } from '@/components/site/RelatedRail';
 import { ScaleLadder } from './_components/ScaleLadder';
 import { ModelEnergyMap } from './_components/ModelEnergyMap';
 import { WhoPays } from './_components/WhoPays';
@@ -375,7 +376,8 @@ export default function EnvironmentPage() {
         </div>
       </div>
 
-      <ActPager current="II" />
+      <RelatedRail />
+      <SeriesPager series="ai-discourse" current="/investigations/ai-discourse/environment" />
 
       <StalenessFooter
         verifiedOn="2026-04-25"

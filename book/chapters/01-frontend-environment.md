@@ -68,7 +68,7 @@ in the population (millennia ago), to the climate that selected
 those genes (millions of years ago). At every level, the
 environment is doing something. The person doing the behavior is
 not the source of the behavior in the way folk psychology imagines.
-The person is where many environments meet.[^1]
+The person is where many environments meet.[^ch1-1]
 
 This is uncomfortable in part because it sounds like determinism.
 Sapolsky is happy to call it that. *Determined* makes the case
@@ -98,7 +98,7 @@ single canonical text, single language, single pace — is not a
 discovery about how learning works. It is a Prussian and
 American-industrial decision from the middle of the nineteenth
 century, designed for the specific purpose of producing a
-literate, punctual workforce capable of factory shift work.[^2]
+literate, punctual workforce capable of factory shift work.[^ch1-2]
 It worked, in that sense. It still works, in that sense. What it
 does not do — and was never designed to do — is provide an
 environment in which the full range of human capacity can develop.
@@ -230,7 +230,7 @@ why it has stayed invisible for so long. That is the question
 of Chapter 2: how inherited frames calcify into infrastructure
 that no one remembers having decided.
 
-[^1]: Sapolsky, *Behave: The Biology of Humans at Our Best and
+[^ch1-1]: Sapolsky, *Behave: The Biology of Humans at Our Best and
 Worst* (Penguin Press, 2017). The cascading-causation framing
 is the organizing structure of the book; see in particular the
 chapters titled *One Second Before*, *Seconds to Minutes Before*,
@@ -238,7 +238,7 @@ chapters titled *One Second Before*, *Seconds to Minutes Before*,
 *Back to the Crib, Back to the Womb*, and *Centuries to
 Millennia Before*.
 
-[^2]: For the Prussian and American-industrial origins of the
+[^ch1-2]: For the Prussian and American-industrial origins of the
 modern classroom, see David F. Labaree, *Someone Has to Fail:
 The Zero-Sum Game of Public Schooling* (Harvard University
 Press, 2010); and Lawrence Cremin, *American Education: The

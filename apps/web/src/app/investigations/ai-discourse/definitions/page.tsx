@@ -6,7 +6,8 @@ import { ClaimCard } from '@/components/ai/ClaimCard';
 import { StalenessFooter } from '@/components/ai/StalenessFooter';
 import { SectionHeader } from '@/components/ai/SectionHeader';
 import { TLDRStrip, type TLDRItem } from '@/components/ai/TLDRStrip';
-import { ActPager } from '@/components/ai/ActPager';
+import { SeriesPager } from '@/components/site/SeriesPager';
+import { RelatedRail } from '@/components/site/RelatedRail';
 import { DefinitionsMatrix } from './_components/DefinitionsMatrix';
 import { AIEffectTimeline } from './_components/AIEffectTimeline';
 import { AISemanticBlackBox } from '@/app/thesis/components/AISemanticBlackBox';
@@ -310,7 +311,8 @@ export default function DefinitionsPage() {
         </div>
       </div>
 
-      <ActPager current="I" />
+      <RelatedRail />
+      <SeriesPager series="ai-discourse" current="/investigations/ai-discourse/definitions" />
 
       <StalenessFooter
         verifiedOn="2026-04-25"

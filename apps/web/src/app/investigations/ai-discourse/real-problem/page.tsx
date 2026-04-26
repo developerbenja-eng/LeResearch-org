@@ -6,7 +6,8 @@ import { ClaimCard } from '@/components/ai/ClaimCard';
 import { StalenessFooter } from '@/components/ai/StalenessFooter';
 import { SectionHeader } from '@/components/ai/SectionHeader';
 import { TLDRStrip, type TLDRItem } from '@/components/ai/TLDRStrip';
-import { ActPager } from '@/components/ai/ActPager';
+import { SeriesPager } from '@/components/site/SeriesPager';
+import { RelatedRail } from '@/components/site/RelatedRail';
 import { DiscoursePincer } from './_components/DiscoursePincer';
 import { PublicVsElite } from './_components/PublicVsElite';
 import { DisplacedHarmsAtlas } from './_components/DisplacedHarmsAtlas';
@@ -491,7 +492,8 @@ export default function RealProblemPage() {
         </div>
       </div>
 
-      <ActPager current="IV" />
+      <RelatedRail />
+      <SeriesPager series="ai-discourse" current="/investigations/ai-discourse/real-problem" />
 
       <StalenessFooter
         verifiedOn="2026-04-25"
