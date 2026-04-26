@@ -1,8 +1,8 @@
 'use client';
 
-import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { findRelations, type PageRelations, type RelatedLink } from './relations';
+import { HoverPreview } from './HoverPreview';
 
 /**
  * Directional cross-references at the bottom of any long page.
@@ -65,12 +65,13 @@ export function RelatedRail({ href, relations }: RelatedRailProps) {
                 <ul className="space-y-2 text-sm">
                   {items.map((it: RelatedLink) => (
                     <li key={it.href}>
-                      <Link
+                      <HoverPreview
                         href={it.href}
-                        className="text-white/80 hover:text-white block leading-snug"
+                        align="start"
+                        className="text-white/80 hover:text-white inline-block leading-snug"
                       >
                         {it.label} <span className="text-white/30">→</span>
-                      </Link>
+                      </HoverPreview>
                       {it.hint && (
                         <p className="text-[11px] text-white/45 italic mt-0.5 leading-snug">
                           {it.hint}

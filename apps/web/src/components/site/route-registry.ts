@@ -158,7 +158,8 @@ export const ROUTES: RouteEntry[] = [
   { href: '/initiatives/rethinking/paper',                    short: 'Paper',          title: 'Rethinking · the paper', status: 'developing',
     topics: ['capacity','epistemics'], tracks: ['learning'] },
 
-  // Tracks + About
+  // Browse axes + About
+  { href: '/topics',                                          short: 'Topics',         title: 'Browse by concept — the conceptual axis', status: 'evergreen' },
   { href: '/tracks',                                          short: 'Tracks',         title: 'Five substrates of inquiry', status: 'evergreen' },
   { href: '/about',                                           short: 'About',          title: 'About LeResearch — 501(c)(3) in formation', status: 'evergreen' },
 ];
