@@ -92,7 +92,7 @@ export const PRODUCTS: Product[] = [
     name: 'Rethinking Education',
     blurb:
       'A living-draft research framework grounding the Echo family. Neurobiology, pedagogy, liberatory education, and epistemic infrastructure, updated as the evidence does.',
-    url: '/rethinking',
+    url: '/initiatives/rethinking',
     status: 'live',
   },
   {

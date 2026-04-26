@@ -37,7 +37,7 @@ export function ActPager({ current }: { current: 'I' | 'II' | 'III' | 'IV' }) {
         </Link>
       ) : (
         <Link
-          href="/ai"
+          href="/investigations/ai-discourse"
           className="group rounded-xl border border-white/10 bg-white/[0.02] p-5 hover:bg-white/[0.05] hover:border-white/20 transition-colors"
         >
           <div className="text-[10px] font-mono tracking-[0.3em] uppercase text-white/30 mb-1">
@@ -63,7 +63,7 @@ export function ActPager({ current }: { current: 'I' | 'II' | 'III' | 'IV' }) {
         </Link>
       ) : (
         <Link
-          href="/ai"
+          href="/investigations/ai-discourse"
           className="group rounded-xl border border-white/10 bg-white/[0.02] p-5 text-right hover:bg-white/[0.05] hover:border-white/20 transition-colors"
         >
           <div className="text-[10px] font-mono tracking-[0.3em] uppercase text-white/30 mb-1">

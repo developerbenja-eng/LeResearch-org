@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative z-10 flex min-h-screen items-center justify-center px-6">
+    <section className="relative z-10 flex min-h-screen items-center justify-center px-6 overflow-hidden">
       <div
         aria-hidden
         className="absolute top-1/4 -left-32 w-96 h-96 rounded-full opacity-30 blur-3xl pointer-events-none"

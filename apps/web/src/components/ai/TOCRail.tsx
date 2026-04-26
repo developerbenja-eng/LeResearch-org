@@ -49,7 +49,7 @@ export function TOCRail({ items }: { items: TOCItem[] }) {
       aria-label="Section navigation"
     >
       <Link
-        href="/ai"
+        href="/investigations/ai-discourse"
         className="block text-[10px] font-mono tracking-[0.35em] uppercase text-white/30 hover:text-white/60 mb-6 transition-colors"
       >
         ← AI investigation

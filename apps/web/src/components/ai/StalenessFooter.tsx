@@ -32,7 +32,7 @@ export function StalenessFooter({ verifiedOn, earliestStaleness, primarySources 
           stale
         </span>{' '}
         in the receipt cards above are the ones to re-check first.{' '}
-        <Link href="/ai/methodology" className="text-white/55 hover:text-white underline decoration-dotted underline-offset-2">
+        <Link href="/investigations/ai-discourse/methodology" className="text-white/55 hover:text-white underline decoration-dotted underline-offset-2">
           How this is maintained →
         </Link>
       </p>
