@@ -1,0 +1,10 @@
+{
+  "id": "echo-tales",
+  "label": "Echo Tales",
+  "tagline": "Interactive storytelling platform",
+  "description": "Interactive reading, book creation, character crafting, and an AI-powered reader with Kindle sync, Zotero integration, and study tools.",
+  "color": [167, 139, 250],
+  "href": "https://echo-tales.ledesign.ai",
+  "status": "live",
+  "tags": ["AI", "Reader", "Books", "Storytelling"]
+}

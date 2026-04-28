@@ -1,0 +1,613 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+:root {
+  /* Light theme (default) */
+  --background: #ffffff;
+  --foreground: #171717;
+  --background-secondary: #f5f5f5;
+  --background-tertiary: #e5e5e5;
+  --text-primary: #171717;
+  --text-secondary: #525252;
+  --text-muted: #737373;
+  --border-color: #e5e5e5;
+  --card-background: #ffffff;
+  --card-border: #e5e5e5;
+
+  /* Hero gradient for light */
+  --hero-from: #7c3aed;
+  --hero-via: #6d28d9;
+  --hero-to: #db2777;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --background-secondary: #171717;
+  --background-tertiary: #262626;
+  --text-primary: #ffffff;
+  --text-secondary: #a3a3a3;
+  --text-muted: #737373;
+  --border-color: #262626;
+  --card-background: #171717;
+  --card-border: #262626;
+
+  /* Hero gradient for dark */
+  --hero-from: #581c87;
+  --hero-via: #4c1d95;
+  --hero-to: #831843;
+}
+
+/* Also support system preference when no theme is set */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --background-secondary: #171717;
+    --background-tertiary: #262626;
+    --text-primary: #ffffff;
+    --text-secondary: #a3a3a3;
+    --text-muted: #737373;
+    --border-color: #262626;
+    --card-background: #171717;
+    --card-border: #262626;
+    --hero-from: #581c87;
+    --hero-via: #4c1d95;
+    --hero-to: #831843;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Theme-aware utility classes */
+.bg-theme {
+  background-color: var(--background);
+}
+
+.bg-theme-secondary {
+  background-color: var(--background-secondary);
+}
+
+.bg-theme-tertiary {
+  background-color: var(--background-tertiary);
+}
+
+.text-theme-primary {
+  color: var(--text-primary);
+}
+
+.text-theme-secondary {
+  color: var(--text-secondary);
+}
+
+.text-theme-muted {
+  color: var(--text-muted);
+}
+
+.border-theme {
+  border-color: var(--border-color);
+}
+
+.card-theme {
+  background-color: var(--card-background);
+  border-color: var(--card-border);
+}
+
+/* Safe Area Support for notched phones */
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.safe-area-top {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+.safe-area-left {
+  padding-left: env(safe-area-inset-left, 0px);
+}
+
+.safe-area-right {
+  padding-right: env(safe-area-inset-right, 0px);
+}
+
+/* Touch Feedback Utilities */
+.touch-feedback {
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 0.1s ease, opacity 0.1s ease;
+}
+
+.touch-feedback:active {
+  transform: scale(0.97);
+  opacity: 0.9;
+}
+
+/* Minimum touch target size (44x44px for accessibility) */
+.touch-target {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+/* Scrollbar hide utility */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Better focus for accessibility */
+*:focus-visible {
+  outline: 2px solid #8B5CF6;
+  outline-offset: 2px;
+}
+
+/* Prevent text selection on interactive elements */
+.no-select {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+
+/* Smooth scroll container */
+.scroll-smooth {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Mobile-friendly range slider */
+.slider-touch::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  background: #9333ea;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+}
+
+.slider-touch::-webkit-slider-thumb:active {
+  transform: scale(1.2);
+  box-shadow: 0 4px 8px rgba(147, 51, 234, 0.4);
+}
+
+.slider-touch::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  background: #9333ea;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+}
+
+.slider-touch::-moz-range-thumb:active {
+  transform: scale(1.2);
+  box-shadow: 0 4px 8px rgba(147, 51, 234, 0.4);
+}
+
+@media (min-width: 768px) {
+  .slider-touch::-webkit-slider-thumb {
+    width: 16px;
+    height: 16px;
+  }
+
+  .slider-touch::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* Landscape orientation optimizations */
+@media (max-width: 767px) and (orientation: landscape) {
+  /* Reduce vertical spacing in landscape mode */
+  .landscape-compact-header {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .landscape-compact-spacing {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  /* Make chat interfaces use more horizontal space */
+  .landscape-chat-height {
+    height: calc(100vh - 60px);
+  }
+
+  /* Hide bottom nav in landscape to save vertical space */
+  .landscape-hide-bottom-nav {
+    display: none;
+  }
+
+  /* Reduce bottom padding when nav is hidden */
+  .landscape-no-bottom-padding {
+    padding-bottom: 0.5rem !important;
+  }
+
+  /* Optimize quiz layout for landscape */
+  .landscape-quiz-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+/* Safe Area Support for Notched Devices (iPhone 13+, etc.) */
+@supports (padding: env(safe-area-inset-bottom)) {
+  /* Apply safe area to the entire viewport */
+  html {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+
+  /* Utility class for safe area bottom padding */
+  .safe-area-bottom {
+    padding-bottom: calc(0.5rem + env(safe-area-inset-bottom));
+  }
+
+  /* Utility class for safe area top padding */
+  .safe-area-top {
+    padding-top: calc(0.5rem + env(safe-area-inset-top));
+  }
+
+  /* Utility class for all safe areas */
+  .safe-area-all {
+    padding-top: calc(0.5rem + env(safe-area-inset-top));
+    padding-bottom: calc(0.5rem + env(safe-area-inset-bottom));
+    padding-left: calc(0.5rem + env(safe-area-inset-left));
+    padding-right: calc(0.5rem + env(safe-area-inset-right));
+  }
+
+  /* For fixed bottom navigation */
+  .lingua-mobile-nav {
+    padding-bottom: calc(1rem + env(safe-area-inset-bottom));
+  }
+}
+
+/* LeDesign branded animations — used by /research surface */
+@keyframes ld-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes ld-slide-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Music Player Animations */
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.3s ease-out forwards;
+}
+
+.animate-slide-down {
+  animation: slide-down 0.3s ease-in forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.2s ease-out forwards;
+}
+
+/* Music Player Pulse Animation for Playing Indicator */
+@keyframes music-pulse {
+  0%, 100% {
+    transform: scaleY(0.5);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+.animate-music-pulse {
+  animation: music-pulse 0.5s ease-in-out infinite;
+}
+
+/* ========================================
+   ENHANCED DESIGN SYSTEM
+   Premium shadows, animations, and effects
+   ======================================== */
+
+/* Layered Shadow System - Creates depth with multiple shadow layers */
+.shadow-soft {
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.04),
+    0 2px 4px rgba(0, 0, 0, 0.04),
+    0 4px 8px rgba(0, 0, 0, 0.04);
+}
+
+.shadow-medium {
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.04),
+    0 4px 8px rgba(0, 0, 0, 0.06),
+    0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.shadow-elevated {
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.04),
+    0 10px 15px rgba(0, 0, 0, 0.08),
+    0 20px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Purple glow for branded elements */
+.shadow-glow-purple {
+  box-shadow:
+    0 4px 14px rgba(147, 51, 234, 0.25),
+    0 0 40px rgba(147, 51, 234, 0.1);
+}
+
+.shadow-glow-purple-intense {
+  box-shadow:
+    0 4px 20px rgba(147, 51, 234, 0.35),
+    0 0 60px rgba(147, 51, 234, 0.2);
+}
+
+/* Hero grid fade mask */
+.hero-grid-mask {
+  -webkit-mask-image: linear-gradient(to bottom, white 0%, transparent 70%);
+  mask-image: linear-gradient(to bottom, white 0%, transparent 70%);
+}
+
+/* Hover Scale Animation - Smooth lift effect */
+.hover-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+}
+
+.hover-lift-lg {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hover-lift-lg:hover {
+  transform: translateY(-4px);
+}
+
+/* Hover Scale Effect */
+.hover-scale {
+  transition: transform 0.2s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.02);
+}
+
+.hover-scale-lg:hover {
+  transform: scale(1.03);
+}
+
+/* Combined hover effects */
+.card-interactive {
+  transition: transform 0.2s ease, box-shadow 0.25s ease;
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.04),
+    0 2px 4px rgba(0, 0, 0, 0.04),
+    0 4px 8px rgba(0, 0, 0, 0.04);
+}
+
+.card-interactive:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.04),
+    0 10px 15px rgba(0, 0, 0, 0.08),
+    0 20px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Premium Button Styles */
+.btn-primary {
+  position: relative;
+  background: linear-gradient(135deg, #9333ea 0%, #7c3aed 50%, #6d28d9 100%);
+  color: white;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  transition: all 0.2s ease;
+  box-shadow:
+    0 2px 4px rgba(147, 51, 234, 0.2),
+    0 4px 12px rgba(147, 51, 234, 0.15);
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    0 4px 8px rgba(147, 51, 234, 0.3),
+    0 8px 20px rgba(147, 51, 234, 0.2);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow:
+    0 2px 4px rgba(147, 51, 234, 0.2);
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+  color: #374151;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ghost button with border animation */
+.btn-ghost {
+  position: relative;
+  background: transparent;
+  color: #9333ea;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  border: 2px solid #9333ea;
+  transition: all 0.2s ease;
+}
+
+.btn-ghost:hover {
+  background: rgba(147, 51, 234, 0.05);
+  border-color: #7c3aed;
+  box-shadow: 0 0 20px rgba(147, 51, 234, 0.15);
+}
+
+/* Enhanced Focus States for Accessibility */
+.focus-ring {
+  outline: none;
+}
+
+.focus-ring:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 3px var(--background),
+    0 0 0 5px #9333ea;
+}
+
+/* Card styles with glassmorphism */
+.card-glass {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+[data-theme="dark"] .card-glass {
+  background: rgba(23, 23, 23, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Gradient text utility */
+.text-gradient-purple {
+  background: linear-gradient(135deg, #9333ea 0%, #db2777 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Shimmer loading animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    #f0f0f0 25%,
+    #e0e0e0 50%,
+    #f0f0f0 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+[data-theme="dark"] .animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    #262626 25%,
+    #333333 50%,
+    #262626 75%
+  );
+  background-size: 200% 100%;
+}
+
+/* Pulse glow animation for attention */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(147, 51, 234, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(147, 51, 234, 0.6);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Entrance animations */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.4s ease-out forwards;
+}
+
+/* Staggered animation delays for lists */
+.stagger-1 { animation-delay: 0.05s; }
+.stagger-2 { animation-delay: 0.1s; }
+.stagger-3 { animation-delay: 0.15s; }
+.stagger-4 { animation-delay: 0.2s; }
+.stagger-5 { animation-delay: 0.25s; }
+.stagger-6 { animation-delay: 0.3s; }

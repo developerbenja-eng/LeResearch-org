@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="nutritionGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+  </defs>
+  <!-- Leaf shape - nutrition/natural -->
+  <path d="M50 15 C25 15, 12 35, 12 55 C12 75, 30 90, 50 90 C70 90, 88 75, 88 55 C88 35, 75 15, 50 15" fill="url(#nutritionGrad)" opacity="0.9"/>
+  <!-- Leaf veins -->
+  <path d="M50 25 L50 80" stroke="white" stroke-width="2" opacity="0.5"/>
+  <path d="M50 40 L30 55" stroke="white" stroke-width="1.5" opacity="0.4"/>
+  <path d="M50 40 L70 55" stroke="white" stroke-width="1.5" opacity="0.4"/>
+  <path d="M50 55 L35 68" stroke="white" stroke-width="1.5" opacity="0.3"/>
+  <path d="M50 55 L65 68" stroke="white" stroke-width="1.5" opacity="0.3"/>
+  <!-- Magnifying glass - research aspect -->
+  <circle cx="62" cy="38" r="12" stroke="white" stroke-width="2.5" fill="none" opacity="0.8"/>
+  <line x1="71" y1="47" x2="80" y2="56" stroke="white" stroke-width="2.5" opacity="0.8"/>
+  <!-- DNA helix hint inside magnifier -->
+  <path d="M56 34 C59 36, 65 36, 68 34" stroke="white" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M56 38 C59 40, 65 40, 68 38" stroke="white" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M56 42 C59 44, 65 44, 68 42" stroke="white" stroke-width="1" fill="none" opacity="0.6"/>
+</svg>

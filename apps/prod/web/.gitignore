@@ -1,0 +1,16 @@
+.vercel
+public/book/chapters/
+.env.local
+.env*.local
+
+# Founder handbook is private — synced from sibling LeDesign-ai repo at build
+# time, never committed to this public repo. Source-of-truth lives at
+# LeDesign-ai/docs/leresearch-setup/05-founder-operations-handbook.md.
+content/founder-handbook.md
+
+# Local libSQL/SQLite database file (food-systems and others)
+.local/
+*.db
+*.db-journal
+*.db-shm
+*.db-wal

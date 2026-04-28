@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="anatomyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#e11d48"/>
+    </linearGradient>
+  </defs>
+  <!-- Body outline -->
+  <ellipse cx="50" cy="22" rx="12" ry="14" fill="url(#anatomyGrad)" opacity="0.9"/>
+  <!-- Torso -->
+  <path d="M38 36 L35 65 L42 65 L45 50 L50 52 L55 50 L58 65 L65 65 L62 36 Z" fill="url(#anatomyGrad)" opacity="0.85"/>
+  <!-- Arms -->
+  <path d="M35 38 L22 55 L25 58 L38 45" fill="url(#anatomyGrad)" opacity="0.8"/>
+  <path d="M65 38 L78 55 L75 58 L62 45" fill="url(#anatomyGrad)" opacity="0.8"/>
+  <!-- Legs -->
+  <path d="M42 65 L38 90 L45 90 L48 70 L50 70 L52 70 L55 90 L62 90 L58 65" fill="url(#anatomyGrad)" opacity="0.85"/>
+  <!-- Heart symbol -->
+  <path d="M50 42 C47 38, 42 38, 42 43 C42 48, 50 54, 50 54 C50 54, 58 48, 58 43 C58 38, 53 38, 50 42" fill="white" opacity="0.9"/>
+  <!-- Spine line -->
+  <line x1="50" y1="36" x2="50" y2="65" stroke="white" stroke-width="1.5" opacity="0.4"/>
+  <!-- Rib hints -->
+  <path d="M44 42 Q50 44, 56 42" stroke="white" stroke-width="1" fill="none" opacity="0.3"/>
+  <path d="M43 48 Q50 50, 57 48" stroke="white" stroke-width="1" fill="none" opacity="0.3"/>
+</svg>
